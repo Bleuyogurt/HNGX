@@ -4,40 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HNG Stage One Task | Wilson</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@400;500;700&family=Titillium+Web:wght@300;400&display=swap"
-    rel="stylesheet">
-  <title>My Web Page</title>
 </head>
 
 <body>
-  <div class="container">
-    <!-- Slack name -->
-    <h1 data-testid="slackUserName">Odoemelam Wilson</h1>
-
-    <h2 data-testid="slackUserName">display name: Bleuyogurt</h2>
-
-    <!--Profile photo -->
-    <img src="./img/IMG_0188.JPG" alt="blueyogurt" data-testid="slackDisplayImage">
-
-    <!-- HNG track -->
-    <p data-testid="myTrack">Frontend</p>
-
-    <!-- GitHub repo -->
-    <a href="https://github.com/Bleuyogurt" target="_blank" data-testid="githubURL">My GitHub Repository</a>
-
-    <!-- Display of Current Day of the Week using JavaScript -->
-    <p data-testid="currentDayOfTheWeek"></p>
-
-    <!-- Display of Current UTC Time using JavaScript -->
-    <p data-testid="currentUTCTime"></p>
-
+  <div class="card">
+    <div class="personal-info">
+      <img src="./img/IMG_0188.JPG" alt="Bleuyogurt" data-testid="slackDisplayImage">
+      <div class="info-text">Odoemelam Wilson</p>
+        <span data-testid="myTrack">Frontend</span>
+      </div>
+    </div>
+    <div class="date-time">
+      <p data-testid="currentDayOfTheWeek"></p>
+      <p data-testid="currentUTCTime"></p>
+    </div>
+    <div class="github">
+      <a class="button" href="https://github.com/Bleuyogurt/HNGX" data-testid="githubURL">My GitHub Repository</a>
+    </div>
   </div>
-
-  <script src="./main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
